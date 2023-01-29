@@ -150,6 +150,9 @@ vite:{
             return sfc;
           },
         }),
+        // vue({
+        //     include: [/\.vue$/, /\.md$/], // <--
+        //   }),
         MarkdocVue({
           tags: {
             callout: {
