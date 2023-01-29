@@ -14,6 +14,13 @@ import {
 import { v4 as uuid } from "uuid";
 import matter from "gray-matter";
 export default defineNuxtConfig({
+    css: ['@/assets/css/tailwind.css'],
+    postcss: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
 vite:{
     plugins: [
         sourceTransform({
@@ -142,9 +149,6 @@ vite:{
     
             return sfc;
           },
-        }),
-        vue({
-          include: [/\.vue$/, /\.md$/],
         }),
         MarkdocVue({
           tags: {

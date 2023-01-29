@@ -7,5 +7,5 @@
 
 <template>
   <!-- <Content /> -->
-  <p>sda</p>
+  <p class="bg-orange-600">sda</p>
 </template>
