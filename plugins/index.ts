@@ -29,45 +29,49 @@ export default defineNuxtPlugin(nuxtApp => {
           });
           const content = Markdoc.transform(ast, {
             tags: {
-              A2aStorTable: {
-                render: "A2aStorTable",
+               Content: {
+                render: "Content",
                 attributes: {},
               },
-              Attributes: {
-                render: "Attributes",
-                attributes: {
-                  title: {
-                    type: String,
-                    required: true,
-                  },
-                  details: {
-                    type: String,
-                  },
-                  importantInfo: {
-                    type: String,
-                  },
-                },
-              },
-              collapsibleItem:{
-                render:'CollapsibleItem',
-                attributes: {
-                  title:{
-                    type:String,
-                    required:true
-                  },
-                  details: {
-                    type: String,
-                  },
-                  importantInfo: {
-                    type: String,
-                  },
-                },
-              },
-              collapsibleParent:{
-                render:'CollapsibleParent',
-                attributes: {
-                },
-              }
+              // A2aStorTable: {
+              //   render: "A2aStorTable",
+              //   attributes: {},
+              // },
+              // Attributes: {
+              //   render: "Attributes",
+              //   attributes: {
+              //     title: {
+              //       type: String,
+              //       required: true,
+              //     },
+              //     details: {
+              //       type: String,
+              //     },
+              //     importantInfo: {
+              //       type: String,
+              //     },
+              //   },
+              // },
+              // collapsibleItem:{
+              //   render:'CollapsibleItem',
+              //   attributes: {
+              //     title:{
+              //       type:String,
+              //       required:true
+              //     },
+              //     details: {
+              //       type: String,
+              //     },
+              //     importantInfo: {
+              //       type: String,
+              //     },
+              //   },
+              // },
+              // collapsibleParent:{
+              //   render:'CollapsibleParent',
+              //   attributes: {
+              //   },
+              // }
             },
             variables: {
               frontmatter,
