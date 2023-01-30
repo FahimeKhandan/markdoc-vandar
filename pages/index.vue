@@ -2,10 +2,10 @@
 // import Markdoc from '@markdoc/markdoc'
 // import render from 'vue-markdoc'
 
-// import Content from '../assets/content.md'
+import Content from '../assets/content.md'
 </script>
 
 <template>
-  <!-- <Content /> -->
+  <Content />
   <p class="bg-orange-600">sda</p>
 </template>
